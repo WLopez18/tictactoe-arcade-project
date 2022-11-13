@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('simon-berger-JH_R66BihvA-unsplash.jpg');
+}
+
+.game-title {
+    background-color: cornsilk;
+}
+
+.announcement>h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: darkgray;
+}
+
+.game-title,
+.announcement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#restart-button {
+    font-weight: bold;
+    font-size: medium;
+    height: 75px;
+    width: 75px;
+    margin: .5rem;
+    border-radius: 50%;
+    border: solid 2px darkblue;
+}
+
+#restart-button:hover {
+    background-color: cyan;
+    box-shadow: 1px 2px 3px 2px;
+}
+
+#restart-button:active {
+    background-color: lightblue;
+    box-shadow: none;
+}
+
+#the-game {
+    width: 27rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: cornsilk;
+}
+
+.tile {
+    height: 9rem;
+    width: 9rem;
+    border: solid 1px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile:hover {
+    background-color: cadetblue;
+}
+
+#player-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#player1-scoreboard,
+#player2-scoreboard {
+    width: 9rem;
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+#player1-scoreboard {
+    background-color: crimson;
+}
+
+#player2-scoreboard {
+    background-color: royalblue;
+}
+
+#player1Name,
+#player2Name {
+    margin: 0 1rem 1rem;
+}
+
+#player1Info,
+#player2Info {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: snow;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px;
+}

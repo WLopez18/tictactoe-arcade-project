@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <section class="game-title">
+        <h1>Walter's Tic Tac Toe Game</h1>
+    </section>
+    <section class="announcement">
+        <h2 id="message">Game Announcements.</h2>
+        <form>
+            <button id="restart-button">Restart</button>
+        </form>
+    </section>
+    <section id="container">
+        <div id="the-game">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+        <div id="player-info">
+            <div id="player1Info">
+                <form name="player1_name" id="player1Name">
+                    <input type="text" placeholder="Write your name, Player 1" id='player1Input' />
+                    <button id="player1NameSubmit">Enter</button>
+                </form>
+                <div id="player1-scoreboard">
+                    <p id="player1Letter">X</p>
+                    <p id="player1">Player 1</p>
+                </div>
+            </div>
+            <div id="player2Info">
+                <form name="player2_name" id="player2Name">
+                    <input type="text" placeholder="Write your name, Player 2" id='player2Input' />
+                    <button id="player2NameSubmit">Enter</button>
+                </form>
+                <div id="player2-scoreboard">
+                    <p id="player2Letter">O</p>
+                    <p id="player2">Player 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
